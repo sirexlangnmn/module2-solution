@@ -1,0 +1,37 @@
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.section {
+  box-sizing: border-box;
+  width: 33.33%;
+  float: left;
+  padding: 20px;
+  border: 1px solid black;
+}
+
+.title {
+  position: relative;
+  background-color: #F44336; /* Red color for section title region */
+  color: white;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 991px) {
+  .section {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .section {
+    width: 100%;
+  }
+
+  .section:nth-child(3) {
+    clear: both;
+  }
+}
